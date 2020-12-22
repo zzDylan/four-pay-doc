@@ -1,7 +1,5 @@
 # 异步通知
 
-
-
 用户支付成功后，平台会发送异步通知到订单携带的notify\_url（如果有该参数的话），请求方式为 POST
 
 请求参数：
@@ -17,7 +15,6 @@
 | openid | string\(32\) | Y | 用户OPENID标示，本参数没有实际意义，旨在方便用户端区分不同用户 |
 | attach | string\(127\) | N | 用户自定义数据 |
 | mchid | string\(16\) | Y | AIPAY 商户号 |
-| type | string\(16\) | N | 支付类型。微信订单不返回该字段；支付宝订单返回：alipay |
 | sign | string\(32\) | Y | 数据签名 详见[签名算法]() |
 
 接收回调流程示例：
@@ -36,4 +33,6 @@ if($data['pay_status'] == 1){
     echo 'success';
 }
 ```
+
+
 
