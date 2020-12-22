@@ -15,7 +15,6 @@
 | openid | string\(32\) | Y | 用户OPENID标示，本参数没有实际意义，旨在方便用户端区分不同用户 |
 | attach | string\(127\) | N | 用户自定义数据 |
 | mch\_id | string\(16\) | Y | AIPAY 商户号 |
-| type | string\(16\) | N | 支付类型。微信订单不返回该字段；支付宝订单返回：alipay |
 | sign | string\(32\) | Y | 数据签名 详见[签名算法]() |
 
 接收回调流程示例：
